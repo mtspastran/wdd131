@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals | W01 Assignment: Home Page | Matias Pastran</title>
+    <meta name="description" content="This assignment allows you to demonstrate your prerequisite knowledge by applying HTML and CSS in the design and development of a home page. In addition, you will be asked to apply learning activity concepts including JavaScript to provide some dynamic information."/>
+    <meta name="author" content="Matias Pastran"/>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <div><h1>WDD 131: Dynamic Web Fundamentals - <span class="color-text">Matias Pastran</span></h1></div>
+        <nav>
+            <a href="https://www.linkedin.com/in/matias-pastran/" target="_blank">LinkedIn</a>
+            <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/26?lang=eng&id=p24#p24" target="_blank">Scripture</a>
+            <a href=# target="_blank">Final Project</a>
+        </nav>
+    </header>
+    <main>
+  
+        <section class="card">
+          <h2>About Me</h2>
+          <div class="me">
+            <img class="profile" src="images/profile_picture.jpg" alt="Student Profile Image"
+              width="200" height="136">
+            <p>Hi! My name is Matias Pastran. I'm 34 years old, and I'm from Mendoza, Argentina, where I live with my family consisting of my wife and my 3 years old daughter. I love playing drums, football, and I'm a fan of J.R.R. Tolkien's work. My plan is to learn as much as I can and become a functional and efficient developer.</p>
+          </div>
+          <div class="country">
+            <h3>Mendoza, Argentina</h3>
+            <figure>
+              <img src="images/argentina_flag.png"
+                alt="Flag of Argentina" width="200">
+                <figcaption>Official Flag of Argentina</figcaption>
+            </figure>
+            <p>Argentina is a country located in the southest lands of South America, sharing borders with Chile, Uruguay, Paraguay, Brazil, and Bolivia. It is known for being the birth place of many sports, and arts celebrities, such as Diego Maradona, Lionel Messi, Juan Manuel Fangio, Jorge Luis Borges, Ricardo Darin, among others. Argentinian people is known for being extroverts and passionate, and their food is well recognized everywhere.
+            </p> 
+          </div> 
+        </section>
+        <section class="card">
+          <h2>Web Dev Resources</h2>
+          <div class="middle">
+            <ul>
+              <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+              <li><a href="https://smashingmagazine.com">Smashing Magazine</a></li>
+              <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+              <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+              <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+              <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p><span id="currentYear"></span> | Matias Pastran | Mendoza, Argentina</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    </body> 
+    </html>
