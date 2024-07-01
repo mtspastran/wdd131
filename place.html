@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Place Website (Argentina) - Matias Pastran</title>
+        <meta name="description"
+            content="WDD 131 - Place Website - Matias Pastran - Place website based in Argentina, the country in which I live, and love.">
+        <meta name="author" content="Matias Pastran">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Argentina</h1>
+        </header>
+        <main>
+            <picture>
+                <source srcset="images/mendoza-large.webp" media="(min-width: 600px)"/>
+                <img src="images/mendoza-small.webp" alt="Valle del Cocora" width="600" height="300"/>
+            </picture>
+            <div class="data">
+                <h2 class="data-title">Data</h2>
+                <table class="data-table">
+                    <tr>
+                        <td class="data-left">Area:</td>
+                        <td class="data-right">2,78 km²</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Population:</td>
+                        <td class="data-right">46,04 million</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Capital:</td>
+                        <td class="data-right">Capital Federal</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Langagues:</td>
+                        <td class="data-right">Spanish</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Currency:</td>
+                        <td class="data-right">Peso Argentino</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Time Zone:</td>
+                        <td class="data-right">UTC-3</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Calling Code:</td>
+                        <td class="data-right">+54</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Internet TLD:</td>
+                        <td class="data-right">.ar</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="weather">
+                <h2 class="weather-title">Weather</h2>
+                <picture class="logo">
+                    <source srcset="images/weather-icon.svg" media="(min-width: 600px)">
+                    <img src="images/weather-icon.svg" alt="weather logo" width="60" height="30">
+                </picture>
+                <table class="weather-table">
+                    <tr>
+                        <td class="weather-left">Temperature:</td>
+                        <td class="weather-right">15°C</td>
+                    </tr>
+                    <tr>
+                        <td class="weather-left">Conditions:</td>
+                        <td class="weather-right">Partly Cloudly</td>
+                    </tr>
+                    <tr>
+                        <td class="weather-left">Wind:</td>
+                        <td class="weather-right">12 km/h</td>
+                    </tr>
+                    <tr>
+                        <td class="weather-left">Wind Chill: </td>
+                        <td class="weather-right" id="windchill"></td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <p>©️ <span id="currentyear"></span> | Matias Pastran | Mendoza, Argentina</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
